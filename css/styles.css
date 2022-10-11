@@ -35,6 +35,8 @@ body {
 header {
     background: #FFFFFF;
     border-bottom: 1px solid #ECECEC;
+    padding-top: 24px;
+    padding-bottom: 25px;
 }
 
 header .logo, footer .logo {
@@ -101,7 +103,6 @@ header .logo span {
 
 .contact-mail {
     color: var(--secondary-color);
-    /* margin-right: 50px; */
 }
 
 .contact-mail a {
@@ -122,13 +123,22 @@ header .logo span {
 }
 
 .order {
-    background: #2F303A;
     padding: 200px 0;
+}
+
+.overlay {
+    background: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 40%),
+        rgba(47, 48, 58, 40%)
+    ),
+    url(../images/orderoverlay.jpg) no-repeat center/cover;
 }
 
 .webstudio-title {
     color: #FFFFFF;
     text-transform: uppercase;
+    font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
     letter-spacing: 0.06em;
@@ -175,6 +185,7 @@ header .logo span {
     width: 270px;
     display: flex;
     margin-bottom: 10px;
+    margin-top: 30px;
 }
 
 .features-list-descr {
@@ -252,6 +263,46 @@ header .logo span {
     color: var(--secondary-color);
 }
 
+.social-list {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 16px;
+}
+
+.social-link {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+}
+
+
+
+footer .social-list {
+    display: flex;
+    /* justify-content: center; */
+    gap: 10px;
+    margin-top: 16px;
+}
+
+footer .social-link {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+}
+
+footer .social-icon {
+    fill: #fff;
+}
+
 footer {
     background-color: #2F303A;
     padding: 60px 0;
@@ -274,6 +325,21 @@ footer .logo span {
     line-height: 1.71;
     color: #fff;
 }
+
+.social-title {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 1);
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+    /* width: 270px; */
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    margin-bottom: 20px;
+    /* margin-top: 30px; */
+}
+
 
 .cont{
     color: rgba(255, 255, 255, 0.6);
@@ -334,28 +400,71 @@ footer .logo span {
     width: 100%;
 }
 
+.project-description {
+    padding: 20px 24px;
+}
+
 .project-card-name {
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
     color: var(--primary-color);
-    text-align: left;
-    margin: 20px 24px 2px 24px;
+    margin-bottom: 4px;
 }
 
 .project-card-filter {
     font-size: 16px;
     line-height: 1.88;
-    text-align: left;
+    letter-spacing: 0,03em;
     color: var(--secondary-color);
-    margin: 4px 24px 20px 24px;
+   
 }
 
 .header-container {
     display: flex;
     align-items: center;
-    padding-top: 24px;
-    padding-bottom: 25px;
-    
 }
+
+
+/* CLIENTS*/
+.clients-title {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.17;
+        text-align: center;
+}
+
+.clients-list {
+    display: flex;
+    gap: 30px;
+    margin-top: 50px;
+}
+.clients-item {
+    width: calc((100-60px) / 3);
+}
+.clients-link {
+    width: 170px;
+    height: 92px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+}
+
+.clients-icon {
+    fill: #AFB1B8;
+}
+
+/* FEATURES ICONS */
+.features-list-icon {
+    width: 270px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    background-color: #F5F4FA;
+}
+
