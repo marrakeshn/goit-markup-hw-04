@@ -24,18 +24,28 @@
                     <a href="./index.html" class="logo">Web<span>Studio</span></a>
                     <nav>
                         <ul class="menu-items">
-                            <li class="item"><a href=./index.html>Студія</a></li>
-                            <li class="item"><a href=./portfolio.html>Портфоліо</a></li>
-                            <li class="item"><a href="#contacts">Контакти</a></li>
+                            <li class="item"><a href=./index.html class="item-link">Студія</a></li>
+                            <li class="item"><a href=./portfolio.html class="item-link">Портфоліо</a></li>
+                            <li class="item"><a href="#contacts" class="item-link">Контакти</a></li>
                         </ul>
                     </nav>
                 </div>
-                <ul class="menu-contacts">
-                    <li class="contact-mail">
-                        <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+                <ul class="menu-contacts-list">
+                    <li class="menu-contacts-item">
+                        <a href="mailto:info@devstudio.com">
+                            <svg class="menu-contacts-icon" width="16" height="12">
+                                <use href="./images/icons.svg#icon-envelope">
+                                </use>
+                            </svg>info@devstudio.com
+                        </a>
                     </li>
-                    <li class="contact-tel">
-                        <a href="tel:+380961111111">+38 096 111 11 11</a>
+                    <li class="menu-contacts-item">
+                        <a href="tel:+380961111111">
+                            <svg class="menu-contacts-icon" width="16" height="12">
+                                <use href="./images/icons.svg#icon-smartphone">
+                                </use>
+                            </svg>+38 096 111 11 11
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -45,12 +55,22 @@
     <main>
         <section class="section">
             <div class="container">
-                <ul class="filters">
-                    <li class="filter active">Усі</li>
-                    <li class="filter">Веб-сайти</li>
-                    <li class="filter">Додатки</li>
-                    <li class="filter">Маркетинг</li>
-                    <li class="filter">Дизайн</li>
+                <ul class="filters-list">
+                    <li class="filter">
+                        <button class="filter-btn" type="button">Усі</button>
+                    </li>
+                    <li class="filter">
+                        <button class="filter-btn" type="button">Веб-сайти</button>
+                    </li>
+                    <li class="filter">
+                        <button class="filter-btn" type="button">Додатки</button>
+                    </li>
+                    <li class="filter">
+                        <button class="filter-btn" type="button">Дизайн</button>
+                    </li>
+                    <li class="filter">
+                        <button class="filter-btn" type="button">Маркетинг</button>
+                    </li>
                 </ul>
                 <ul class="projects">
                     <li class="project-card">
@@ -128,14 +148,47 @@
 
     <footer id="contacts">
         <div class="container">
-            <a href="./index.html" class="logo">Web<span>Studio</span></a>
-            <address>
-                <ul class="address-list">
-                    <li class="location">м. Київ, пр-т Лесі Українки, 26</li>
-                    <li class="cont">info@devstudio.com</li>
-                    <li class="cont">+38 096 111 11 11</li>
-                </ul>
-            </address>
+            <div class="footer-columns">
+                <div class="footer-address">
+                    <a href="./index.html" class="logo">Web<span>Studio</span></a>
+                    <address>
+                        <ul class="address-list">
+                            <li class="location">м. Київ, пр-т Лесі Українки, 26</li>
+                            <li class="cont">info@devstudio.com</li>
+                            <li class="cont">+38 096 111 11 11</li>
+                        </ul>
+                    </address>
+                </div>
+                <div class="footer-social">
+                    <h3 class="social-title">приєднуйтесь</h3>
+                    <ul class="social-list">
+                        <li class="social-item"><a href="" class="social-link">
+                                <svg class="social-icon" width="20" height="20">
+                                    <use href="./images/icons.svg#icon-instagram">
+                                    </use>
+                                </svg></a>
+                        </li>
+                        <li class="social-item"><a href="" class="social-link">
+                                <svg class="social-icon" width="20" height="20">
+                                    <use href="./images/icons.svg#icon-facebook">
+                                    </use>
+                                </svg></a>
+                        </li>
+                        <li class="social-item"><a href="" class="social-link">
+                                <svg class="social-icon" width="20" height="20">
+                                    <use href="./images/icons.svg#icon-twitter">
+                                    </use>
+                                </svg></a>
+                        </li>
+                        <li class="social-item"><a href="" class="social-link">
+                                <svg class="social-icon" width="20" height="20">
+                                    <use href="./images/icons.svg#icon-linkedin">
+                                    </use>
+                                </svg></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </footer>
 </body>
