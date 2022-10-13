@@ -100,8 +100,10 @@ header .logo span {
 
 
 .item-link:hover,
-.item-link:focus {
+.item-link:focus,
+.item-link:active {
     color: var(--accent-color);
+    
 }
 
 .item-link.current {
@@ -113,16 +115,22 @@ header .logo span {
     margin-right: 30px;
 }
 
-.menu-contacts-item a {
+.menu-contacts-item  a {
     color: var(--secondary-color);
 }
 
-.menu-contacts-item:hover a {
+.menu-contacts-item:hover a,
+/* .menu-contacts-item:target a, */
+.menu-contacts-item:focus-within a {
     color: var(--accent-color);
 }
 
 .menu-contacts-item:hover a .menu-contacts-icon {
     fill: var(--accent-color);
+}
+.menu-contacts-item:focus-within a .menu-contacts-icon {
+    fill: var(--accent-color);
+    
 }
 
 .menu-contacts-item:last-of-type {
@@ -170,12 +178,18 @@ header .logo span {
     padding: 10px 32px 10px 32px;
 }
 
-.order-btn:hover,
+.order-btn:hover {
+    color: var(--white-color);
+    background-color: #188ce8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}
 .order-btn:focus {
     color: var(--white-color);
     background-color: #188ce8;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+    
 }
 
 .features {
@@ -307,9 +321,17 @@ header .logo span {
 .social-link:hover {
     background-color: var(--accent-color);
 }
+.social-link:focus {
+    background-color: var(--accent-color);
+    
+}
 
 .social-link:hover .social-icon {
     fill: var(--white-color)
+}
+.social-link:focus .social-icon {
+    fill: var(--white-color);
+    
 }
 
 
@@ -340,9 +362,10 @@ footer {
 
 .footer-columns {
     display: flex;
+    align-items: baseline;
     margin: 0;
     padding: 0;
-    list-style: none;
+    
 }
 
 .social-title {
@@ -357,7 +380,6 @@ footer {
 }
 
 .footer-social {
-    margin-top: 15px;
     margin-left: 70px;
     width: 206px;
     
@@ -430,7 +452,18 @@ footer .logo span {
     cursor: pointer;
     background-color: var(--accent-color);
     color: var(--white-color);
-
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 
+                0px 1px 2px rgba(0, 0, 0, 0.08), 
+                0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+.filter-btn:focus {
+    cursor: pointer;
+    background-color: var(--accent-color);
+    color: var(--white-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 
+                0px 1px 2px rgba(0, 0, 0, 0.08), 
+                0px 2px 2px rgba(0, 0, 0, 0.12);
+    
 }
 
 .projects {
@@ -449,6 +482,12 @@ footer .logo span {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 
                 0px 4px 4px rgba(0, 0, 0, 0.06), 
                 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.project-card:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 
+                0px 4px 4px rgba(0, 0, 0, 0.06), 
+                1px 4px 6px rgba(0, 0, 0, 0.16);
+    
 }
 
 .project-card img {
@@ -516,6 +555,18 @@ footer .logo span {
     background-color: var(--white-color);
     border: 1px solid var(--accent-color);
     border-radius: 4px;
+}
+.clients-link:focus {
+    background-color: var(--white-color);
+    border: 1px solid var(--accent-color);
+    border-radius: 4px;
+    
+}
+
+
+.clients-link:focus .clients-icon {
+    fill: var(--accent-color);
+    
 }
 
 .clients-link:hover .clients-icon {
